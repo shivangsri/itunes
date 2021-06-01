@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F4F0F0">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="13dp"
+        android:paddingRight="10dp"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="4dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="200dp">
+
+
+            <ImageView
+                android:id="@+id/imageview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+
+                android:foreground="@drawable/gradient"
+                android:scaleType="centerCrop" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/trackname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="15"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="left"
+                    android:text="Track"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/time"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="right"
+                    android:text="Time"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView1"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardView"
+        android:layout_marginLeft="10dp"
+
+        android:layout_marginRight="10dp"
+        android:paddingLeft="10dp"
+
+
+        android:paddingRight="10dp"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/genre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+
+                    android:padding="10dp"
+                    android:text="genre "
+                    android:textColor="@color/black"
+
+                    android:textSize="15dp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/trackid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+
+                    android:padding="10dp"
+                    android:text="Track id"
+
+                    android:textSize="15dp"
+                    android:visibility="visible"
+
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/artist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imageview"
+                    android:fontFamily="sans-serif"
+                    android:padding="10dp"
+                    android:text="Artist"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    app:drawableTint="#101010" />
+
+                <TextView
+                    android:id="@+id/artistid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imageview"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:padding="10dp"
+
+                    android:text="ArtistId"
+                    android:textSize="15sp"
+                    app:drawableTint="#101010" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
